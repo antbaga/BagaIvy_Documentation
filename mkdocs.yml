@@ -9,7 +9,7 @@ nav:
 
   - Procedural Mode :
     - Create Ivy :
-        - Creating New Ivy: procedural/creation/create-ivy.md
+        - Add New Ivy: procedural/creation/create-ivy.md
         - Drawing Mode: procedural/creation/drawing.md
         - Using Assets & Presets: procedural/creation/assets-presets.md
     - Parameters :
@@ -25,9 +25,23 @@ nav:
     - Management:
         - Source Objects: procedural/management/sources.md
         - Apply & Export: procedural/management/apply-mesh.md
+
   - Simulation Mode :
     - Create Ivy :
-        - Creating New Ivy: creation/create-ivy.md
+        - Add New Ivy: simulation/creation/create-ivy.md
+        - Baking: simulation/creation/create-ivy.md
+        - Step 1 - Core Growth: simulation/creation/create-ivy.md
+        - Step 2 - Foliage Growth: simulation/creation/create-ivy.md
+    - Features :
+        - Draw Control: simulation/creation/create-ivy.md
+        - Cut Tool: simulation/creation/create-ivy.md
+        - Leaves & Flowers: simulation/creation/create-ivy.md
+        - Animation: simulation/creation/create-ivy.md
+        - Optimization: simulation/creation/create-ivy.md
+        - Visibility: simulation/creation/create-ivy.md
+    - Management:
+        - Source Objects: procedural/management/sources.md
+        - Apply & Export: procedural/management/apply-mesh.md
 
   - Help & Support: support.md
 
