@@ -1,30 +1,34 @@
 site_name: Baga Ivy Generator
 nav:
   - Home: index.md
+
   - Getting Started: 
-      - Installation: installation.md
+      - Installation: getting-started/installation.md
       - First Steps (Workflow): getting-started/workflow.md
       - Generation Modes: getting-started/modes.md
+
   - Procedural Mode :
     - Create Ivy :
-        - Creating New Ivy: creation/create-ivy.md
-        - Drawing Mode: creation/drawing.md
-        - Using Assets & Presets: creation/assets-presets.md
-    - Parameters Detail:
-        - Growth & Branching: parameters/growth.md
-        - Trunk & Materials: parameters/trunk.md
-        - Leaves & Foliage: parameters/leaves.md
-        - Flowers & Fruits: parameters/flowers.md
+        - Creating New Ivy: procedural/creation/create-ivy.md
+        - Drawing Mode: procedural/creation/drawing.md
+        - Using Assets & Presets: procedural/creation/assets-presets.md
+    - Parameters :
+        - Growth & Branching: procedural/parameters/growth.md
+        - Trunk & Materials: procedural/parameters/trunk.md
+        - Leaves & Foliage: procedural/parameters/leaves.md
+        - Flowers & Fruits: procedural/parameters/flowers.md
     - Advanced Features:
-        - Effectors (Obstacles): advanced/effectors.md
-        - Animation: advanced/animation.md
-        - Performance & Proxies: advanced/performance.md
-        - Advanced Generation: advanced/generation-settings.md
+        - Effectors (Obstacles): procedural/advanced/effectors.md
+        - Animation: procedural/advanced/animation.md
+        - Performance & Proxies: procedural/advanced/performance.md
+        - Advanced Generation: procedural/advanced/generation-settings.md
     - Management:
-        - Source Objects: management/sources.md
-        - Apply & Export: management/apply-mesh.md
+        - Source Objects: procedural/management/sources.md
+        - Apply & Export: procedural/management/apply-mesh.md
   - Simulation Mode :
     - Create Ivy :
         - Creating New Ivy: creation/create-ivy.md
+
   - Help & Support: support.md
+
 theme: readthedocs

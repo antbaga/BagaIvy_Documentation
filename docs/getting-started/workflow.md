@@ -34,10 +34,3 @@ The addon features three distinct modes, each suited for different use cases:
 | **Fast** | Ideal for generating ivy over large areas quickly. |
 | **Accurate** | Best for generating ivy on smaller surfaces with more detail. |
 | **Precision** | Allows you to draw branches manually for total control in the foreground. |
-
----
-
-## Support and Community
-
-If you encounter any issues or want to share your work, feel free to join the community:
-* **Discord**: [Join our community](https://discord.gg/yourlink)
