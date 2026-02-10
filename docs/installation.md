@@ -26,8 +26,9 @@ The file should be named:
 
 Once installed, the list should automatically filter to show Baga Ivy.
 
-1. Check the box next to **Generic: Baga Ivy Generator** (or *Object: Baga Ivy Generator*) to enable it.
+1. Check the box next to **Baga Ivy Generator** to enable it.
 2. The addon is now active!
+3. Don't forget to save the addon preferences (bottom left button).
 
 > **Note:** If it doesn't appear, type "Baga" in the search bar at the top right of the Preferences window.
 
@@ -37,12 +38,8 @@ Once installed, the list should automatically filter to show Baga Ivy.
 
 The addon is located in the **3D Viewport Side Panel (N-Panel)**.
 
-1. In the 3D Viewport, press the **`N`** key on your keyboard to open the side panel.
-2. Look for the tab named **BagaIvy**.
-3. Select an object and click **Add Ivy** to start creating!
-
-![Location in Viewport](assets/location_screenshot.jpg)  
-*(Make sure to add a screenshot of your panel in your assets folder)*
+In the 3D Viewport, press the **`N`** key on your keyboard to open the side panel.
+Look for the tab named **BagaIvy**.
 
 ---
 
