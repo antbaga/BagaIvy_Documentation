@@ -1,5 +1,26 @@
 site_name: Baga Ivy Generator
 nav:
   - Home: index.md
-  - Installation: installation.md
+  - Getting Started: 
+      - Installation: installation.md
+      - First Steps (Workflow): getting-started/workflow.md
+      - Generation Modes: getting-started/modes.md
+  - Creation & Drawing:
+      - Creating New Ivy: creation/create-ivy.md
+      - Drawing Mode: creation/drawing.md
+      - Using Assets & Presets: creation/assets-presets.md
+  - Parameters Detail:
+      - Growth & Branching: parameters/growth.md
+      - Trunk & Materials: parameters/trunk.md
+      - Leaves & Foliage: parameters/leaves.md
+      - Flowers & Fruits: parameters/flowers.md
+  - Advanced Features:
+      - Effectors (Obstacles): advanced/effectors.md
+      - Animation: advanced/animation.md
+      - Performance & Proxies: advanced/performance.md
+      - Advanced Generation: advanced/generation-settings.md
+  - Management:
+      - Source Objects: management/sources.md
+      - Apply & Export: management/apply-mesh.md
+  - Help & Support: support.md
 theme: readthedocs
