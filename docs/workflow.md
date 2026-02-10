@@ -10,7 +10,7 @@ The addon is designed to streamline the creation of organic growth within Blende
 
 * **Extensive Library**: Includes approximately **70 different species** with more than **300 unique flower and leaf assets**.
 * **Versatile Growth**: Create everything from simple ivy to complex climbing vines and creeping plants.
-* **Compatibility**: Currently supports **Blender 4.2 and newer**.
+* **Compatibility**: Currently supports **Blender 3.3 to 3.6**.
 
 ---
 
@@ -34,10 +34,3 @@ The addon features three distinct modes, each suited for different use cases:
 | **Fast** | Ideal for generating ivy over large areas quickly. |
 | **Accurate** | Best for generating ivy on smaller surfaces with more detail. |
 | **Precision** | Allows you to draw branches manually for total control in the foreground. |
-
----
-
-## Support and Community
-
-If you encounter any issues or want to share your work, feel free to join the community:
-* **Discord**: [Join our community](https://discord.gg/yourlink)
