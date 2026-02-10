@@ -10,13 +10,10 @@ nav:
   - Procedural Mode :
     - Create Ivy :
         - Add New Ivy: procedural/creation/create-ivy.md
-        - Drawing Mode: procedural/creation/drawing.md
-        - Using Assets & Presets: procedural/creation/assets-presets.md
+        - Draw Mode: procedural/creation/drawing.md
     - Parameters :
         - Growth & Branching: procedural/parameters/growth.md
-        - Trunk & Materials: procedural/parameters/trunk.md
-        - Leaves & Foliage: procedural/parameters/leaves.md
-        - Flowers & Fruits: procedural/parameters/flowers.md
+        - Leavess & Flowers: procedural/parameters/leaves.md
     - Advanced Features:
         - Effectors (Obstacles): procedural/advanced/effectors.md
         - Animation: procedural/advanced/animation.md
@@ -40,8 +37,8 @@ nav:
         - Optimization: simulation/creation/create-ivy.md
         - Visibility: simulation/creation/create-ivy.md
     - Management:
-        - Source Objects: procedural/management/sources.md
-        - Apply & Export: procedural/management/apply-mesh.md
+        - Objects Data: simulation/management/sources.md
+        - Apply & Export: simulation/management/apply-mesh.md
 
   - Help & Support: support.md
 
