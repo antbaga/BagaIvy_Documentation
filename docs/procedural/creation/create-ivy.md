@@ -1,53 +1,51 @@
-# Growth & Branching
+# Adding Ivy (Procedural Method)
 
-The **Ivy Growth** menu gives you control over the shape, length, and behavior of the ivy's trunk and branches. It allows you to add starting points, define target objects, and fine-tune how the plant interacts with surfaces.
-
----
-
-## Basic Controls
-
-These settings are available in both **Accurate** and **Fast** modes:
-
-* **Ivy Growth:** Reduces or increases the length of the segments that compose the trunk and branches.
-* **Ivy Resolution:** Controls the resolution of the trunk mesh in the viewport and render.
-* **Surface Offset:** Creates a gap between the wall and the ivy.
-    * *Note:* This lifts the ivy slightly, but if set too high, the ivy may fail to generate and disappear.
-* **Precision:** Sets how closely branches follow the geometry, especially near the edges of the target object.
-* **Network Density:** Regulates the density of the branch network by increasing the probability of intersections.
+This guide covers the workflow for adding ivy using the **Procedural** method. This method allows for instant generation and is highly flexible.
 
 ---
 
-## Targets & Starting Points
+## Step-by-Step Workflow
 
-To control where the ivy starts and where it grows:
+To create your first ivy, follow these steps in the **N-Panel** (BagaIvy tab):
 
-### Add Start Point
-Adds a new starting point for the ivy at the **3D Cursor**'s location.
-> **Note:** Remember to position your 3D Cursor *before* clicking this button.
+### 1. Select the Target
+Select the mesh (or multiple meshes) in your 3D view that the ivy will grow on. These are your **Target** objects.
 
-### Add New Target
-Allows you to add or remove objects on which the ivy can grow.
-> **Warning:** The order of selection is important. When adding/removing a target, the **Ivy must always be the active object**.
+### 2. Configure the Generator
+In the addon panel, ensure the following are set:
 
-!!! warning "Face Orientation"
-    Ivy growth depends on the **Normals** of the target object's faces. If your ivy does not appear, check that your target's faces are facing the right way (Face Orientation).
+* **Method/Generator**: Select **Procedural**.
+* **Generation Mode**: Choose between **Fast**, **Accurate**, or **Precision**. You can change this later, but it's more intuitive to pick one now.
+* **Select Asset Source**: 
+    * **Asset Browser**: To use official presets or your own library.
+    * **View 3D**: To use objects already present in your scene.
+
+### 3. Choose your Species (Presets)
+Open the **Asset Browser**, go to the **Baga Ivy Generator** library, and select a species from the **Presets** category.
+> **Tip**: You can also select any object from any of your personal libraries in the Asset Browser to use it as a custom leaf/flowers..Assets with "flower" in the name will automatically be assigned in the flower part (Collection) of the ivy.
+
+### 4. Place the Start Point
+The ivy needs to know where to begin.
+
+* Place the **3D Cursor** on the surface of your target object (**Shift + Right Click**).
+* The generator will create a **Start Point** at this exact location.
+* *Note: You can move this point or add more later to create multiple growth origins.*
+
+### 5. Generate
+Click the **Add New Ivy** button. Your ivy will appear instantly!
 
 ---
 
-## Ivy Island (Fast Mode Only)
+## Important Rules
 
-In **Fast Mode**, to generate large quantities of ivy without slowing down the computer, the addon creates "islands" of vegetation instantiated around the main trace.
+### Switching Modes
+* **Within Procedural**: You can freely switch between **Fast**, **Accurate**, and **Precision** modes at any time after creation.
+* **Simulation vs Procedural**: You **cannot** switch a procedural ivy to a simulation ivy (and vice-versa). These methods use different calculation systems.
 
-* **Display Ivy Island:** Displays only the original island (useful for debugging).
-* **Wavy Growth:** Gives a random minimum and maximum scale to the selected island assets.
-* **Branch Detachment:** Allows you to add or delete assets from the island system.
+### Changing Presets
+Don't worry if you change your mind! You can **change the preset** or the assets used even after the ivy has been generated. The generator will update the existing structure with the new assets.
 
 ---
 
-## Branch Profile (Precision Mode Only)
-
-This menu offers precise control over the trunk's shape and shader, more detailed than in Fast/Accurate modes.
-
-* **Branch Radius:** Defines the maximum and minimum radius of the trunk and branches.
-* **Auto Radius:** Merges branches together if there are enough of them, creating a more organic trunk base.
-* **UV Scale:** Adjusts the texture mapping on the trunk.
+## Next Step
+Once your ivy is added, you can refine its shape manually using the **[Drawing Mode](procedural/creation/drawing.md)**.

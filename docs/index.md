@@ -32,4 +32,4 @@ If you are new to BagaIvy, we recommend following the documentation in order:
 
 ---
 
-*(Copyright : BagaCorp, [Kiara (Antoine) Bagattini](https://x.com/BagattiniAntoi1) and Laura Mercadal).*
+*(Copyright : [BagaCorp](https://www.f12studio.fr/), [Kiara Bagattini](https://x.com/BagattiniAntoi1) and [Laura Mercadal](https://www.instagram.com/mercadal_laura/)).*
