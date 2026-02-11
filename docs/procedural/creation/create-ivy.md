@@ -48,4 +48,4 @@ Don't worry if you change your mind! You can **change the preset** or the assets
 ---
 
 ## Next Step
-Once your ivy is added, you can refine its shape manually using the **[Drawing Mode](procedural/creation/drawing.md)**.
+Once your ivy is added, you can refine its shape manually using the **[Drawing Mode](drawing.md)**.

@@ -13,7 +13,7 @@ nav:
         - Draw Mode: procedural/creation/drawing.md
     - Parameters :
         - Growth & Branching: procedural/parameters/growth.md
-        - Leavess & Flowers: procedural/parameters/leaves.md
+        - Leaves & Flowers: procedural/parameters/leaves.md
     - Advanced Features:
         - Effectors (Obstacles): procedural/advanced/effectors.md
         - Animation: procedural/advanced/animation.md
