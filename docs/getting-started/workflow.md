@@ -58,9 +58,9 @@ It is divided into three distinct modes, each suited for different use cases:
 
 ## Important Notes
 
-!! info "Which one to choose?"
+!!! info "Which one to choose?"
     * Use **Simulation** when you need physics-based realism, hanging vines, or an animated growth sequence.
     * Use **Procedural** for static environments where speed, instant feedback, and easy propagation control are your top priorities.
 
-!! warning "Switching Modes"
-    While you can switch between Procedural modes (Fast, Accurate, Precision) after generation, switching from a Procedural method to a Simulation method (or vice versa) may require you to re-generate the ivy from scratch.
+!!! warning "Switching Modes"
+    While you can switch between Procedural modes (Fast, Accurate, Precision) after generation, switching from a Procedural method to a Simulation method (or vice versa) may require you to remove and re-add the ivy from scratch.
