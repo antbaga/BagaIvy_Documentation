@@ -6,6 +6,7 @@ nav:
       - Installation: getting-started/installation.md
       - First Steps (Workflow): getting-started/workflow.md
       - Generation Modes: getting-started/modes.md
+      - Presets: getting-started/presets.md
 
   - Procedural Mode :
     - Create Ivy :
@@ -41,6 +42,7 @@ nav:
         - Apply & Export: simulation/management/apply-mesh.md
 
   - Help & Support: support.md
+  - License: license.md
 
 theme: readthedocs
 markdown_extensions:

@@ -12,7 +12,7 @@ This addon streamlines the creation of organic growth through parametric generat
 
 ### Key Features
 * **3 Procedural Generators:** Choose between **Fast** (performance), **Accurate** (realism), or **Precision** (manual drawing) depending on your shot.
-* **Simulation:** [Simulate](procedural/creation/create-ivy.md) and animate ivy growth.
+* **Simulation:** [Simulate](simulation/creation/create-ivy.md) and animate ivy growth.
 * **Extensive Library:** Includes over **300 assets** and **70 presets** (flowers, leaves, fruits, various species) ready to use from the Asset Browser.
 * **Animation Ready:** Generates loopable wind animations and dynamic leaf movement out of the box.
 * **Optimization:** Built-in proxy system and bounding box generation to keep your viewport smooth, even with heavy vegetation.
