@@ -17,7 +17,7 @@ nav:
     - Advanced Features:
         - Effectors (Obstacles): procedural/advanced/effectors.md
         - Animation: procedural/advanced/animation.md
-        - Performance & Proxies: procedural/advanced/performance.md
+        - Optimization: procedural/advanced/performance.md
         - Advanced Generation: procedural/advanced/generation-settings.md
     - Management:
         - Source Objects: procedural/management/sources.md
@@ -26,16 +26,16 @@ nav:
   - Simulation Mode :
     - Create Ivy :
         - Add New Ivy: simulation/creation/create-ivy.md
-        - Baking: simulation/creation/create-ivy.md
-        - Step 1 - Core Growth: simulation/creation/create-ivy.md
-        - Step 2 - Foliage Growth: simulation/creation/create-ivy.md
+        - Baking: simulation/creation/bake.md
+        - Step 1 - Core Growth: simulation/creation/step-1.md
+        - Step 2 - Foliage Growth: simulation/creation/step-2.md
     - Features :
-        - Draw Control: simulation/creation/create-ivy.md
-        - Cut Tool: simulation/creation/create-ivy.md
-        - Leaves & Flowers: simulation/creation/create-ivy.md
-        - Animation: simulation/creation/create-ivy.md
-        - Optimization: simulation/creation/create-ivy.md
-        - Visibility: simulation/creation/create-ivy.md
+        - Draw Control: simulation/features/draw.md
+        - Cut Tool: simulation/features/cut.md
+        - Leaves & Flowers: simulation/features/leaves.md
+        - Animation: simulation/features/animation.md
+        - Optimization: simulation/features/optimization.md
+        - Visibility: simulation/features/visibility.md
     - Management:
         - Objects Data: simulation/management/sources.md
         - Apply & Export: simulation/management/apply-mesh.md
