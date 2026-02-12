@@ -28,7 +28,7 @@ These parameters define the physical behavior of the ivy during the growth calcu
 * **Deformation**: Adds organic noise and smoothing to the generated curves to make them look more natural.
 
 !!! info "Post-Bake Restrictions"
-    Once the simulation is **Baked**, the **Simulation Settings** and **Deformation** panels are locked and no longer available. The bake process freezes the underlying curves.
+    Once the simulation is **Baked**, the **Simulation Settings**, **Draw Influence** and **Deformation** panels are locked and no longer available. The bake process freezes the underlying curves.
 
 ---
 
@@ -40,14 +40,12 @@ Unlike the simulation settings, the **Geometry** panel remains fully adjustable 
 * **Step Reduction**: Gradually reduces the radius as the branch grows.
 * **Resolution & Segment Length**: Controls the density of the mesh topology.
 * **Material**: Assign your bark or stem material here.
-* **UV Scale**: Adjusts the tiling of the trunk texture. Remember to use an 'Attribute' node named **'UVs'** in your shader.
+* **UV Scale**: Adjusts the tiling of the trunk texture. Remember to use an 'Attribute' node and use **'UVs'** aas attribute name in your shader.
 
 ---
 
 ## Target Management
 You can modify which objects the ivy interacts with using the **Target** panel.
 
-* **Add selection to Targets**: Includes the currently selected objects in the ivy's detection list.
+* **Add selection to Targets**: Includes the currently selected objects in the ivy's Target Collection.
 * **Remove selection from Targets**: Excludes selected objects so the ivy will no longer grow on them.
-
-> **Note**: After adding or removing targets, you must re-select the ivy object to refresh the UI.

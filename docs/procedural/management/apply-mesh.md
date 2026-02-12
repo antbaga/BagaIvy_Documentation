@@ -29,17 +29,7 @@ The **Apply Ivy** function transforms the ivy into a standard Blender mesh.
 
 ## Exporting to Other Software ?
 
-While we do not currently provide official export tools for software like **Cinema 4D, 3ds Max, or Unreal Engine**, you can still export your finalized ivy manually:
-
-1.  **Mesh Export**: Export the geometry as usual (FBX/OBJ/USD).
-2.  **Instance Data**: The small faces representing the leaves contain the necessary data to re-instance assets in other engines.
-3.  **Manual Re-instancing**: In the target software, you will need to export your leaf assets separately and use the faces of the ivy mesh as a distribution source.
-
-### Important: Leaf Indexing
-The faces representing the leaves use **indices** to determine which asset from your collection goes where. 
-
-* These indices are strictly based on the order of the assets within your leaf/flower collections.
-* If you change the order of the assets or add/remove items from the collection *after* applying, the leaves will be repositioned or swapped across the faces.
+There are no export features for external software at the moment.
 
 ---
 
