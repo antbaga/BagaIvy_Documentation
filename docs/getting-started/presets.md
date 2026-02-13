@@ -30,7 +30,11 @@ If you have fine-tuned a preset and want those settings to become the new "defau
 * Click the **Save Preset Values** icon (the down-arrow icon at the very top of the panel). 
 * This overrides the default values stored in the addon's internal JSON file with your current settings.
 
-### Creating a New Preset
+### Creating a New Preset (EXPERIMENTAL)
+
+!!! warning "Work in progress ..."
+    **This feature is still in development. It works, but don’t rely on it for your entire library yet. Further improvements are needed so anyone can create and share ivy presets.**
+
 You can save your unique ivy setups as new presets to use in future projects:
 
 1.  Configure your ivy (assets and parameters) exactly as you want it.
