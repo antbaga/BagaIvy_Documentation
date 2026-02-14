@@ -5,9 +5,8 @@
 ### **V3 - Major Update** 02/2026
 This version introduces a completely new way to generate ivy using physics-based simulation.
 
-* **New Feature:** Added **Simulation Mode** (Physically accurate growth animation).
-* **Library Overhaul:** Complete upgrade of all **70 species** (Improved Shaders and high-fidelity 3D models).
-* **Optimization:** Improved viewport performance for heavy scenes.
+* **New Generator:** Added **Simulation Mode** (Growth animation).
+* **Library Overhaul:** Complete upgrade of all **70 species** (Improved Shaders and 3D models).
 
 ### **V2 - Update** 11/2023
 * **New Generators:**
