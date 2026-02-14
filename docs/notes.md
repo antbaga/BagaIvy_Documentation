@@ -2,20 +2,20 @@
 
 ## Release Notes
 
-### **V3 - Major Update** 02/2026
+### **V3 - Major Update** - 02/2026
 This version introduces a completely new way to generate ivy using physics-based simulation.
 
 * **New Generator:** Added **Simulation Mode** (Growth animation).
 * **Library Overhaul:** Complete upgrade of all **70 species** (Improved Shaders and 3D models).
 
-### **V2 - Update** 11/2023
+### **V2 - Update** - 11/2023
 * **New Generators:**
     * Added **Fast Generator**.
     * Added **Precision Generator**.
 * **Library Expansion:** Added **40 New Species**.
 * **Workflow:** Added **Switch Preset** feature.
 
-### **V1 - First Release** 11/2022
+### **V1 - First Release** - 11/2022
 * **Initial release of BagaIvy**.
 * **Accurate Generator**.
 * **Library:** 30 Species included.

@@ -18,10 +18,12 @@ The addon is designed to streamline the creation of organic growth within Blende
 
 Creating ivy is an intuitive process that integrates directly into your Blender workflow through the **N-Panel**:
 
-1.  **Select Assets**: Choose your plant assets or a predefined preset.
-2.  **Pick a Target**: Select the object on which you want the ivy to grow.
-3.  **Choose Mode**: Select a generation mode Simulation or Procedural (Fast, Accurate, or Precision) depending on your needs.
-4.  **Generate**: Click "Add New Ivy" and adjust parameters to perfectly fit your environment.
+1.  **Select Assets**: Choose your assets or a preset. In the Viewport or Asset Browser > BagaIvy Generator > Presets.
+2.  **Select a Target**: Select the object on which you want the ivy to grow.
+2.  **Set the 3D Cursor**: Set a "Start Point" by positionning the 3D Cursor (ivy will grow from this point).
+3.  **Choose Mode**: Select a generation method Simulation or Procedural (Fast, Accurate, or Precision) depending on your needs.
+4.  **Generate**: Click “Add Ivy,” then draw for procedural ivy or bake for simulation.
+
 
 ---
 
