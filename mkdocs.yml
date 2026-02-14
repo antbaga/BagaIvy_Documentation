@@ -43,6 +43,7 @@ nav:
 
   - Help & Support: support.md
   - License: license.md
+  - Release Notes: notes.md
 
 theme: readthedocs
 markdown_extensions:
