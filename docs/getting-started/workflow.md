@@ -25,6 +25,7 @@ Creating ivy is an intuitive process that integrates directly into your Blender 
 4.  **Generate**: Click “Add Ivy,” then draw for procedural ivy or bake for simulation.
 
 
+[BagaIvy Simulation First Steps Youtube Tutorial](https://youtu.be/KAdrI_W3c_4){ .md-button .md-button--primary }
 ---
 
 # Generation Modes

@@ -21,6 +21,8 @@ This addon streamlines the creation of organic growth through parametric generat
 
 ## Getting Started
 
+[Watch the YouTube Tutorial !](https://youtu.be/KAdrI_W3c_4){ .md-button .md-button--primary }
+
 If you are new to BagaIvy, we recommend following the documentation in order:
 
 1.  **[Installation](getting-started/installation.md):** How to install the addon and the asset library correctly.

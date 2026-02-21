@@ -42,6 +42,13 @@ Unlike the simulation settings, the **Geometry** panel remains fully adjustable 
 * **Material**: Assign your bark or stem material here.
 * **UV Scale**: Adjusts the tiling of the trunk texture. Remember to use an 'Attribute' node and use **'UVs'** aas attribute name in your shader.
 
+## Fix Sharp Angles
+
+If the ivy has sharp edges or hard breaks, go to **Geometry** (sub-panel).
+
+* Increase **Smooth Angles** to `3` or higher
+* Reduce **Segment Length** to `0.01`
+
 ---
 
 ## Target Management

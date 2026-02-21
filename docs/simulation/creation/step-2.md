@@ -50,6 +50,13 @@ Adjust the visual appearance of the foliage mesh here.
 * **Mesh Resolution & Segment Length**: Controls the density of the generated mesh.
 * **Material & UV Scale**: Assigns textures and controls their mapping. Use an 'Attribute' node named **'UVs'** in your shader to access the procedural coordinates.
 
+## Fix Sharp Angles
+
+If the ivy has sharp edges or hard breaks, go to **Geometry** (sub-panel).
+
+* Increase **Smooth Angles** to `3` or higher
+* Reduce **Segment Length** to `0.01`
+
 ---
 
 ## Additional Tools

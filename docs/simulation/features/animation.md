@@ -43,3 +43,28 @@ The Wind panel is used to animate leaf movement. These settings are identical to
     * **Intensity**: The strength of the wind on that specific axis.
     * **Time Offset**: Offsets the animation between different leaves so they don't move in perfect unison.
     * **Influence Texture**: Uses a procedural texture to drive the movement's intensity locally.
+    
+---
+
+## Fix Leaf Flickering
+
+If some leaves flicker (their orientation changes abruptly from one frame to another or they behave erratically), enable the **Anti-Flick** feature.
+
+Go to **Leaves & Flowers → Growth** and enable **Anti-Flick**.
+
+!!! info
+    In most cases, simply enabling this fixes the issue.  
+    Note that it slightly reduces leaf orientation accuracy.
+
+If flickering persists:
+
+* Increase **Smooth Rotation** to a very low value (e.g. `0.01`).  
+  This usually targets only the flickering leaves.  
+  They may still move, but the rotation will be distributed across multiple frames.
+* If the issue still persists, increase the value to `0.9` or `0.95`.  
+  This will smooth all leaves, not just the problematic ones.
+
+!!! warning
+    After changing this parameter, you must update the animation.  
+    Re-run the animation or use the dedicated update button in the interface.
+

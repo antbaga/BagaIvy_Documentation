@@ -30,6 +30,20 @@ If you have fine-tuned a preset and want those settings to become the new "defau
 * Click the **Save Preset Values** icon (the down-arrow icon at the very top of the panel). 
 * This overrides the default values stored in the addon's internal JSON file with your current settings.
 
+### Material Preset
+
+When you **Save Preset**, BagaIvy also saves the values of the **branch material**.
+
+More specifically, it stores the parameters from the node group **`BIG_Ivy_Bark`**.  
+If **`BIG_Ivy_Bark`** is not present in the material, the material values cannot be saved.
+
+* **Save Preset** saves both the preset and the branch material values.
+* **Save Material Preset** saves only the material values.
+
+!!! info
+    Saved material values apply to both **Procedural Ivy** and **Ivy Simulation**.
+
+
 ### Creating a New Preset (EXPERIMENTAL)
 
 !!! warning "Work in progress ..."

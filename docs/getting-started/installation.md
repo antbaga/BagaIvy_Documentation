@@ -53,3 +53,4 @@ If you are installing a new version (e.g., updating from V1.0 to V2.0), you **mu
 4. Click the **Remove** button to uninstall it completely.
 5. **Restart Blender** (Crucial step to clear the cache).
 6. Install the new `.zip` file following the standard procedure.
+

@@ -4,6 +4,10 @@ The **Simulation** method in BagaIvy V3 allows realistic growth animations. Unli
 
 ---
 
+[Quick Start : Simulation YouTube Tutorial](https://youtu.be/KAdrI_W3c_4){ .md-button .md-button--primary }
+
+---
+
 ## 1. Preparation
 
 ### Select Targets

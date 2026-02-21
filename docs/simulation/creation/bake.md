@@ -2,14 +2,18 @@
 
 In BagaIvy, Simulation results are dynamic until they are **Baked**. Baking converts the procedural physics calculations into a stored data cache, ensuring your ivy stays exactly as you designed it and remains performant during playback. **You must save your file before Baking.**
 
+!!! info "Bake Packing"
+    BagaIvy Simulation is available from Blender 4.2 and newer versions.
+    However, in Blender 4.2 only, there may be issues when removing bake caches. We recommend using the addon in Blender 4.3 or newer, as bake caches are stored directly inside the .blend file in those versions, which reduces potential bugs.
+
 ---
 
 ## The Two-Step Workflow
 
 All simulation logic in BagaIvy relies on a two-stage baking process. You must complete Step 1 before you can proceed to Step 2.
 
-* **Step 1 - Core Growth**: Creates the main skeleton of the ivy. It defines the primary path and propagation of the plant. |
-* **Step 2 - Foliage Growth**: Generates the volume, smaller branches, and foliage based on the skeleton created in Step 1. |
+* **Step 1 - Core Growth**: Creates the main skeleton of the ivy. It defines the primary path and propagation of the plant.
+* **Step 2 - Foliage Growth**: Generates the volume, smaller branches, and foliage based on the skeleton created in Step 1.
 
 !!! warning "Dependencies"
     These steps are linked. You can only bake **Step 2** if **Step 1** is already baked. If you delete the Step 1 cache, the Step 2 cache will automatically be deleted as well.
