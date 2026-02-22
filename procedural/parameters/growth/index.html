@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Growth & Branching - Baga Ivy Generator</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Growth \u0026 Branching";
+        var mkdocs_page_input_path = "procedural/parameters/growth.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Baga Ivy Generator
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/workflow/">First Steps (Workflow)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/modes/">Generation Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/presets/">Presets</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procedural Mode</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Create Ivy</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../creation/create-ivy/">Add New Ivy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../creation/drawing/">Draw Mode</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Parameters</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Growth & Branching</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#1-fast-mode-parameters">1. Fast Mode Parameters</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#main-settings">Main Settings</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#ivy-island-exclusive-to-fast-mode">Ivy Island (Exclusive to Fast Mode)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-accurate-mode-parameters">2. Accurate Mode Parameters</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-precision-mode-parameters">3. Precision Mode Parameters</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#common-settings-all-modes">Common Settings (All Modes)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#targets-origins">Targets &amp; Origins</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#performance-visibility">Performance &amp; Visibility</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../leaves/">Leaves & Flowers</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Advanced Features</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../advanced/effectors/">Effectors (Obstacles)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../advanced/animation/">Animation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../advanced/performance/">Optimization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../advanced/generation-settings/">Advanced Generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../management/sources/">Source Objects</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../management/apply-mesh/">Apply & Export</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Simulation Mode</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Create Ivy</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/creation/create-ivy/">Add New Ivy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/creation/bake/">Baking</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/creation/step-1/">Step 1 - Core Growth</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/creation/step-2/">Step 2 - Foliage Growth</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Features</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/draw/">Draw Control</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/cut/">Cut Tool</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/leaves/">Leaves & Flowers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/animation/">Animation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/optimization/">Optimization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/visibility/">Visibility</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/management/sources/">Objects Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/management/apply-mesh/">Apply & Export</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../support/">Help & Support</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../license/">License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../notes/">Release Notes</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Baga Ivy Generator</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Procedural Mode</li>
+          <li class="breadcrumb-item">Parameters</li>
+      <li class="breadcrumb-item active">Growth & Branching</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ivy-growth-parameters">Ivy Growth &amp; Parameters</h1>
+<p>The <strong>Ivy Growth</strong> section is where you define how the plant spreads, its density, and its overall morphology. </p>
+<div class="admonition warning">
+<p class="admonition-title">Mode Specificity</p>
+<p>Parameters in the Growth menu vary significantly depending on whether you are using <strong>Fast</strong>, <strong>Accurate</strong>, or <strong>Precision</strong> mode. Because each mode uses a different generation algorithm, <strong>settings are not synchronized</strong> when you switch between them.</p>
+</div>
+<hr />
+<h2 id="1-fast-mode-parameters">1. Fast Mode Parameters</h2>
+<p><strong>Best for: Backgrounds and large surfaces.</strong></p>
+<p>In <strong>Fast Mode</strong>, the generator creates a small initial "piece" of ivy—called an <strong>Island</strong>—and replicates it across the drawn areas to maximize performance.</p>
+<h3 id="main-settings">Main Settings</h3>
+<ul>
+<li><strong>Ivy Density</strong>: Controls the global amount of vegetation (Leaves, Flowers and Fruits).</li>
+<li><strong>Ivy Propagation</strong>: Defines how far the ivy spreads from curvz.</li>
+<li><strong>Angle Target Edge</strong>: Adjusts how the ivy embraces the shape of the geometry as it unfurls.</li>
+<li><strong>Ivy Bridge</strong>: Settings to control how ivy spans gaps between different surfaces.</li>
+</ul>
+<h3 id="ivy-island-exclusive-to-fast-mode">Ivy Island (Exclusive to Fast Mode)</h3>
+<p>This sub-menu allows you to modify the individual "piece" used for replication:</p>
+<ul>
+<li><strong>Display Only Ivy Island</strong>: Isolate the original island to see exactly what is being instantiated.</li>
+<li><strong>Branch Detachment</strong>: Add or remove assets specifically from the island structure.</li>
+<li><strong>Wavy Growth</strong>: Adds random variation to the scale and shape of the island assets.</li>
+<li><strong>Branch Radius</strong>: Defines the minimum and maximum thickness of the island's branches.</li>
+</ul>
+<hr />
+<h2 id="2-accurate-mode-parameters">2. Accurate Mode Parameters</h2>
+<p><strong>Best for: Medium to close-up shots requiring realistic branching.</strong></p>
+<p>This mode generates a true mesh of branches with <em>"realistic"</em> ramifications (splitting branches).</p>
+<ul>
+<li><strong>Ivy Growth</strong>: Increases or reduces the length of the individual segments that compose the trunk and branches.</li>
+<li><strong>Network Density</strong>: Regulates the density of the branch network by increasing the probability of branch intersections.</li>
+<li><strong>Precision</strong>: Sets how closely the branches follow the target geometry, especially near the edges.</li>
+<li><strong>Surface Offset</strong>: Creates a slight gap between the wall and the ivy. <ul>
+<li><em>Warning: If set too high, the ivy may fail to generate.</em></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="3-precision-mode-parameters">3. Precision Mode Parameters</h2>
+<p><strong>Best for: Hero assets and foreground elements.</strong></p>
+<p>In <strong>Precision Mode</strong>, you draw branch by branch. You have total manual control, but the generator does <strong>not</strong> produce automatic ramifications (secondary branches).</p>
+<ul>
+<li><strong>Curve-Based Control</strong>: You can manually adjust the <strong>Radius</strong> (thickness) and <strong>Tilt</strong> (rotation) of each branch using Blender's curve tools.</li>
+<li><strong>Branch Profile &amp; Shader</strong>:<ul>
+<li><strong>Auto Radius</strong>: Automatically merges branches together for a more organic look.</li>
+<li><strong>UV Scale</strong>: Adjusts the scale of the procedural bark texture.</li>
+<li><strong>Material/Color</strong>: Direct access to customize the bark's color, brightness, and material assignment.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="common-settings-all-modes">Common Settings (All Modes)</h2>
+<h3 id="targets-origins">Targets &amp; Origins</h3>
+<ul>
+<li><strong>Target (+/-)</strong>: Add or remove surfaces the ivy is allowed to grow on.<ul>
+<li><em>Note: The Ivy must be the active object when adding a new target.</em></li>
+</ul>
+</li>
+<li><strong>Add Start Point to 3D Cursor</strong>: Adds a new growth origin at your 3D cursor's position.</li>
+</ul>
+<h3 id="performance-visibility">Performance &amp; Visibility</h3>
+<ul>
+<li><strong>Ivy Resolution</strong>: Controls the mesh detail. You can set different values for the <strong>Viewport</strong> (lower for speed) and <strong>Render</strong> (higher for quality).</li>
+<li><strong>Decimate</strong>: Merges branches together to reduce polycount at the expense of realism (best for background assets).</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Normals Matter</p>
+<p>Ivy growth depends on the <strong>Face Orientation (Normals)</strong> of your target objects. If your ivy is growing inside a wall or not appearing, check that your target's faces are pointing outward.</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../creation/drawing/" class="btn btn-neutral float-left" title="Draw Mode"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../leaves/" class="btn btn-neutral float-right" title="Leaves & Flowers">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../creation/drawing/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../leaves/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

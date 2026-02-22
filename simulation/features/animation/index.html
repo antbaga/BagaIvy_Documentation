@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Animation - Baga Ivy Generator</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Animation";
+        var mkdocs_page_input_path = "simulation/features/animation.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Baga Ivy Generator
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/workflow/">First Steps (Workflow)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/modes/">Generation Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/presets/">Presets</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procedural Mode</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Create Ivy</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/creation/create-ivy/">Add New Ivy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/creation/drawing/">Draw Mode</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Parameters</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/parameters/growth/">Growth & Branching</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/parameters/leaves/">Leaves & Flowers</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Advanced Features</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/effectors/">Effectors (Obstacles)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/animation/">Animation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/performance/">Optimization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/generation-settings/">Advanced Generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/management/sources/">Source Objects</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/management/apply-mesh/">Apply & Export</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Simulation Mode</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Create Ivy</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../creation/create-ivy/">Add New Ivy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../creation/bake/">Baking</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../creation/step-1/">Step 1 - Core Growth</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../creation/step-2/">Step 2 - Foliage Growth</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Features</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../draw/">Draw Control</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../cut/">Cut Tool</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../leaves/">Leaves & Flowers</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Animation</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#growth">Growth</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#growth-methods">Growth Methods</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#growth-parameters">Growth Parameters</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#wind">Wind</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#wind-methods">Wind Methods</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#parameters">Parameters</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fix-leaf-flickering">Fix Leaf Flickering</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../optimization/">Optimization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../visibility/">Visibility</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../management/sources/">Objects Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../management/apply-mesh/">Apply & Export</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../support/">Help & Support</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../license/">License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../notes/">Release Notes</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Baga Ivy Generator</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Simulation Mode</li>
+          <li class="breadcrumb-item">Features</li>
+      <li class="breadcrumb-item active">Animation</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="animation-simulation">Animation (Simulation)</h1>
+<p>The Animation section allows you to manage the growth animation of your ivy, branch Deformation and winds. While procedural ivy is limited to leaf movement, simulation mode enables full growth animation.</p>
+<hr />
+<h2 id="growth">Growth</h2>
+<p>This section handles the progression of the ivy from birth to full growth.</p>
+<h3 id="growth-methods">Growth Methods</h3>
+<p>You can choose how the growth is triggered:</p>
+<ul>
+<li><strong>Scene Time</strong>: The growth is synchronized with the baked frame range. <ul>
+<li><strong>Time Scale</strong>: Allows you to speed up or slow down the overall growth speed.</li>
+<li><strong>Time Offset</strong>: Shifts the starting frame of the animation.</li>
+</ul>
+</li>
+<li><strong>Manual</strong>: Replaces timeline synchronization with a simple <strong>0 to 1 slider</strong>. <ul>
+<li><strong>0</strong> represents the very start of the growth.</li>
+<li><strong>1</strong> represents the fully grown ivy.</li>
+<li>This slider is fully animatable via keyframes for precise control.</li>
+</ul>
+</li>
+</ul>
+<h3 id="growth-parameters">Growth Parameters</h3>
+<ul>
+<li><strong>Time Profile</strong>: Used to edit the velocity curve of the growth (e.g., fast at the start, slow at the end, loops, ...).</li>
+<li><strong>Branch Growth Mode</strong>: A factor that balances two growth behaviors:<ul>
+<li><strong>At 0</strong>: All branches continue to grow slowly until the entire baked frame range has passed (older branches slow down as they age).</li>
+<li><strong>At 1</strong>: Branches grow at a constant speed and finish their growth much earlier than the total animation length.</li>
+<li><strong>Tip</strong>: A value of <strong>0.8</strong> is recommended for the most natural-looking results.</li>
+</ul>
+</li>
+<li><strong>Deform Animation</strong>: Adds an organic offset/displacement effect to the branches during their growth phase.</li>
+</ul>
+<hr />
+<h2 id="wind">Wind</h2>
+<p>The Wind panel is used to animate leaf movement. These settings are identical to the Procedural mode.</p>
+<h3 id="wind-methods">Wind Methods</h3>
+<ul>
+<li><strong>Continue</strong>: Provides a constant, randomized wind effect.</li>
+<li><strong>Loop</strong>: Designed for seamless animation loops in long sequences.</li>
+</ul>
+<h3 id="parameters">Parameters</h3>
+<ul>
+<li><strong>Speed &amp; Turbidity</strong>: Sets the basic velocity and chaos of the swaying foliage.</li>
+<li><strong>Vertical &amp; Horizontal Influence</strong>: Fine-tune the movement independently for each axis.<ul>
+<li><strong>Intensity</strong>: The strength of the wind on that specific axis.</li>
+<li><strong>Time Offset</strong>: Offsets the animation between different leaves so they don't move in perfect unison.</li>
+<li><strong>Influence Texture</strong>: Uses a procedural texture to drive the movement's intensity locally.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="fix-leaf-flickering">Fix Leaf Flickering</h2>
+<p>If some leaves flicker (their orientation changes abruptly from one frame to another or they behave erratically), enable the <strong>Anti-Flick</strong> feature.</p>
+<p>Go to <strong>Leaves &amp; Flowers → Growth</strong> and enable <strong>Anti-Flick</strong>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>In most cases, simply enabling this fixes the issue.<br />
+Note that it slightly reduces leaf orientation accuracy.</p>
+</div>
+<p>If flickering persists:</p>
+<ul>
+<li>Increase <strong>Smooth Rotation</strong> to a very low value (e.g. <code>0.01</code>).<br />
+  This usually targets only the flickering leaves.<br />
+  They may still move, but the rotation will be distributed across multiple frames.</li>
+<li>If the issue still persists, increase the value to <code>0.9</code> or <code>0.95</code>.<br />
+  This will smooth all leaves, not just the problematic ones.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>After changing this parameter, you must update the animation.<br />
+Re-run the animation or use the dedicated update button in the interface.</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../leaves/" class="btn btn-neutral float-left" title="Leaves & Flowers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../optimization/" class="btn btn-neutral float-right" title="Optimization">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../leaves/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../optimization/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

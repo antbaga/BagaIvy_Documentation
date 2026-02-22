@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Leaves & Flowers - Baga Ivy Generator</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Leaves \u0026 Flowers";
+        var mkdocs_page_input_path = "procedural/parameters/leaves.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Baga Ivy Generator
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/workflow/">First Steps (Workflow)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/modes/">Generation Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/presets/">Presets</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procedural Mode</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Create Ivy</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../creation/create-ivy/">Add New Ivy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../creation/drawing/">Draw Mode</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >Parameters</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../growth/">Growth & Branching</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Leaves & Flowers</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#leaves">Leaves</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#fast-accurate-modes">Fast &amp; Accurate Modes</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#precision-mode">Precision Mode</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#flowers-fruits">Flowers &amp; Fruits</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#fast-accurate-modes_1">Fast &amp; Accurate Modes</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#precision-mode_1">Precision Mode</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#trunk-branches">Trunk &amp; Branches</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#main-parameters-fast-accurate">Main Parameters (Fast &amp; Accurate)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#using-custom-materials">Using Custom Materials</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#precision-mode-branch-profile">Precision Mode: Branch Profile</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Advanced Features</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../advanced/effectors/">Effectors (Obstacles)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../advanced/animation/">Animation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../advanced/performance/">Optimization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../advanced/generation-settings/">Advanced Generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../management/sources/">Source Objects</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../management/apply-mesh/">Apply & Export</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Simulation Mode</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Create Ivy</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/creation/create-ivy/">Add New Ivy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/creation/bake/">Baking</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/creation/step-1/">Step 1 - Core Growth</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/creation/step-2/">Step 2 - Foliage Growth</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Features</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/draw/">Draw Control</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/cut/">Cut Tool</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/leaves/">Leaves & Flowers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/animation/">Animation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/optimization/">Optimization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/features/visibility/">Visibility</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/management/sources/">Objects Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../simulation/management/apply-mesh/">Apply & Export</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../support/">Help & Support</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../license/">License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../notes/">Release Notes</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Baga Ivy Generator</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Procedural Mode</li>
+          <li class="breadcrumb-item">Parameters</li>
+      <li class="breadcrumb-item active">Leaves & Flowers</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="foliage-trunk-parameters">Foliage &amp; Trunk Parameters</h1>
+<p>This section covers the customization of leaves, flowers (including fruits), and the main trunk/branch structure. </p>
+<div class="admonition info">
+<p class="admonition-title">Fruits Management</p>
+<p>In Baga Ivy Generator, <strong>Fruits</strong> are managed within the <strong>Flowers</strong> menu. Presets that include fruits use the same distribution and alignment logic as flowers.</p>
+</div>
+<hr />
+<h2 id="leaves">Leaves</h2>
+<p>The Leaves menu allows you to set parameters related to density, orientation, and scale. Note that the available settings change depending on your generation mode.</p>
+<h3 id="fast-accurate-modes">Fast &amp; Accurate Modes</h3>
+<ul>
+<li><strong>Leaves Density</strong>: Regulates the overall density of the foliage.</li>
+<li><strong>Distance Min</strong>: Suppresses leaves that are too close to each other to prevent overlapping and limit polycount.</li>
+<li><strong>Leaves Random Scale</strong>: Sets a minimum and maximum random scale for the leaf assets.</li>
+<li><strong>Alternating &amp; Random Rotation</strong>: Adjusts the distribution and orientation of leaves along the branches.</li>
+<li><strong>Inclination</strong>: Controls the leaf angle relative to the branch.</li>
+<li><strong>Offset</strong>: Creates a distance between the leaf and the branch surface.</li>
+</ul>
+<h3 id="precision-mode">Precision Mode</h3>
+<ul>
+<li><strong>Density Radius Based</strong>: Automatically adjusts leaf density based on the thickness of the branch.</li>
+<li><strong>Alignments</strong>: Specialized toggles to align leaves with the <strong>Branch normal</strong>, <strong>Global Ground (Z-axis)</strong>, or the <strong>Target surface</strong>.</li>
+<li><strong>Scale &amp; Local Offset</strong>: Fine-tune the scale and position of assets along the local axis of the branch.</li>
+</ul>
+<hr />
+<h2 id="flowers-fruits">Flowers &amp; Fruits</h2>
+<p>The Flowers menu functions similarly to the Leaves menu and is used to manage both flowers and fruit assets.</p>
+<h3 id="fast-accurate-modes_1">Fast &amp; Accurate Modes</h3>
+<ul>
+<li><strong>Flower Probability</strong>: Controls the chance of a flower/fruit appearing at any given point.</li>
+<li><strong>Random Scale</strong>: Randomizes the size of the flower/fruit assets.</li>
+<li><strong>Rotation</strong>: Adjusts the local tilt. For falling assets like wisteria or heavy fruits, it is often necessary to orient them towards the <strong>Global Z-axis</strong>.</li>
+</ul>
+<h3 id="precision-mode_1">Precision Mode</h3>
+<ul>
+<li><strong>Animation</strong>: Specifically available in Precision mode to add dynamic movement to flowers.</li>
+<li><strong>Advanced Alignment</strong>: Just like leaves, flowers can be aligned to the branch, ground, or target surface for perfect positioning.</li>
+</ul>
+<hr />
+<h2 id="trunk-branches">Trunk &amp; Branches</h2>
+<p>This menu defines the diameter of the trunk and branches, as well as their visual appearance through materials.</p>
+<h3 id="main-parameters-fast-accurate">Main Parameters (Fast &amp; Accurate)</h3>
+<ul>
+<li><strong>Trunk &amp; Branch Radius</strong>: Independently set the thickness of the main trunk and the secondary branches.</li>
+<li><strong>Procedural Bark Material</strong>: By default, branches use a procedural shader where you can adjust <strong>Luminosity, Contrast, Saturation, and Tint Intensity</strong> directly from the N-Panel.</li>
+</ul>
+<h3 id="using-custom-materials">Using Custom Materials</h3>
+<p>If you wish to use your own textures for the trunk:</p>
+<ol>
+<li>Assign your material in the <strong>Material</strong> slot.</li>
+<li>In your Shader Editor, use an <strong>Attribute node</strong>.</li>
+<li><strong>Important</strong>: Set the attribute name to <strong><code>UVs</code></strong> (case sensitive) and connect it to a Mapping node to ensure the textures wrap correctly around the generated branches.</li>
+</ol>
+<h3 id="precision-mode-branch-profile">Precision Mode: Branch Profile</h3>
+<ul>
+<li><strong>Auto Radius</strong>: Merges branches together where they intersect, creating a more organic, flared base for the trunk.</li>
+<li><strong>UV Scale</strong>: Quickly adjust the tiling of the bark texture without entering the Shader Editor.</li>
+</ul>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Adding/Removing Assets</p>
+<p>You can add your own custom leaf or flower objects by selecting <strong>"View 3D"</strong> as the source, selecting your object, then clicking the <strong>+ Add Leaf/Flower</strong> button while the ivy is selected.</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../growth/" class="btn btn-neutral float-left" title="Growth & Branching"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../advanced/effectors/" class="btn btn-neutral float-right" title="Effectors (Obstacles)">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../growth/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../advanced/effectors/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

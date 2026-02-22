@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Step 1 - Core Growth - Baga Ivy Generator</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Step 1 - Core Growth";
+        var mkdocs_page_input_path = "simulation/creation/step-1.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Baga Ivy Generator
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/workflow/">First Steps (Workflow)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/modes/">Generation Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/presets/">Presets</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procedural Mode</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Create Ivy</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/creation/create-ivy/">Add New Ivy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/creation/drawing/">Draw Mode</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Parameters</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/parameters/growth/">Growth & Branching</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/parameters/leaves/">Leaves & Flowers</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Advanced Features</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/effectors/">Effectors (Obstacles)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/animation/">Animation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/performance/">Optimization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/generation-settings/">Advanced Generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/management/sources/">Source Objects</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/management/apply-mesh/">Apply & Export</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Simulation Mode</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Create Ivy</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../create-ivy/">Add New Ivy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../bake/">Baking</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Step 1 - Core Growth</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#simulation-settings">Simulation Settings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#draw-influence-deformation">Draw Influence &amp; Deformation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#geometry">Geometry</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fix-sharp-angles">Fix Sharp Angles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#target-management">Target Management</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../step-2/">Step 2 - Foliage Growth</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Features</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/draw/">Draw Control</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/cut/">Cut Tool</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/leaves/">Leaves & Flowers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/animation/">Animation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/optimization/">Optimization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/visibility/">Visibility</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../management/sources/">Objects Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../management/apply-mesh/">Apply & Export</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../support/">Help & Support</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../license/">License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../notes/">Release Notes</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Baga Ivy Generator</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Simulation Mode</li>
+          <li class="breadcrumb-item">Create Ivy</li>
+      <li class="breadcrumb-item active">Step 1 - Core Growth</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="step-1-core-growth">Step 1 - Core Growth</h1>
+<p><strong>Step 1</strong> is the skeletal stage of your ivy. It defines the main structure: where the plant goes, how far it spreads, how often it branches, and when it starts to fall away from the surface.</p>
+<p>The simulation works on a generational logic: a main branch grows and spawns new offshoots, which in turn grow and spawn their own branches. </p>
+<div class="admonition warning">
+<p class="admonition-title">Exponential Growth</p>
+<p>Be careful with high spawn rates and long lifetimes. Because branches spawn new branches which then spawn more, the simulation can quickly become exponential and impact performance.</p>
+</div>
+<hr />
+<h2 id="simulation-settings">Simulation Settings</h2>
+<p>These parameters define the physical behavior of the ivy during the growth calculation.</p>
+<ul>
+<li><strong>Lifetime</strong>: Defines how long each branch lives (in iterations) before it stops growing or disappears.</li>
+<li><strong>Growth Step</strong>: Sets the speed and distance of growth per iteration.</li>
+<li><strong>Detach Age</strong>: The branch age (in iterations) after which it stops clinging to surfaces and begins to fall due to gravity.</li>
+<li><strong>Gravity Strength</strong>: The strength of the downward force that pulls branches down once they are detached or airborne.</li>
+<li><strong>Detection Radius</strong>: The maximum distance at which a branch can detect and attach to nearby target surfaces.</li>
+<li><strong>Spawn Rate</strong>: Controls how frequently new branches are created per iteration.</li>
+<li><strong>Max Spawn Age</strong>: The maximum branch age where new offshoots can still sprout; beyond this limit, no new branches form from that specific segment.</li>
+<li><strong>Branch Angle</strong>: The angle between the main parent branch and a newly created offshoot.</li>
+</ul>
+<hr />
+<h2 id="draw-influence-deformation">Draw Influence &amp; Deformation</h2>
+<ul>
+<li><strong>Draw Influence</strong>: You can use curves to manually guide the path of the ivy. For detailed control, refer to the <strong>Draw Control</strong> in the Features section.</li>
+<li><strong>Deformation</strong>: Adds organic noise and smoothing to the generated curves to make them look more natural.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Post-Bake Restrictions</p>
+<p>Once the simulation is <strong>Baked</strong>, the <strong>Simulation Settings</strong>, <strong>Draw Influence</strong> and <strong>Deformation</strong> panels are locked and no longer available. The bake process freezes the underlying curves.</p>
+</div>
+<hr />
+<h2 id="geometry">Geometry</h2>
+<p>Unlike the simulation settings, the <strong>Geometry</strong> panel remains fully adjustable even after the ivy is baked. This allows you to fine-tune the visual mesh without re-simulating.</p>
+<ul>
+<li><strong>Radius (Start/End)</strong>: Sets the thickness of the branches at their origin and tips.</li>
+<li><strong>Minimum Radius</strong>: Ensures branches do not become thinner than this value.</li>
+<li><strong>Step Reduction</strong>: Gradually reduces the radius as the branch grows.</li>
+<li><strong>Resolution &amp; Segment Length</strong>: Controls the density of the mesh topology.</li>
+<li><strong>Material</strong>: Assign your bark or stem material here.</li>
+<li><strong>UV Scale</strong>: Adjusts the tiling of the trunk texture. Remember to use an 'Attribute' node and use <strong>'UVs'</strong> aas attribute name in your shader.</li>
+</ul>
+<h2 id="fix-sharp-angles">Fix Sharp Angles</h2>
+<p>If the ivy has sharp edges or hard breaks, go to <strong>Geometry</strong> (sub-panel).</p>
+<ul>
+<li>Increase <strong>Smooth Angles</strong> to <code>3</code> or higher</li>
+<li>Reduce <strong>Segment Length</strong> to <code>0.01</code></li>
+</ul>
+<hr />
+<h2 id="target-management">Target Management</h2>
+<p>You can modify which objects the ivy interacts with using the <strong>Target</strong> panel.</p>
+<ul>
+<li><strong>Add selection to Targets</strong>: Includes the currently selected objects in the ivy's Target Collection.</li>
+<li><strong>Remove selection from Targets</strong>: Excludes selected objects so the ivy will no longer grow on them.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../bake/" class="btn btn-neutral float-left" title="Baking"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../step-2/" class="btn btn-neutral float-right" title="Step 2 - Foliage Growth">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../bake/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../step-2/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

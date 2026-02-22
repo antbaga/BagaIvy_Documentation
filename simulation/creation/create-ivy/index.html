@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Add New Ivy - Baga Ivy Generator</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Add New Ivy";
+        var mkdocs_page_input_path = "simulation/creation/create-ivy.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Baga Ivy Generator
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/workflow/">First Steps (Workflow)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/modes/">Generation Modes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../getting-started/presets/">Presets</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Procedural Mode</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >Create Ivy</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/creation/create-ivy/">Add New Ivy</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/creation/drawing/">Draw Mode</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Parameters</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/parameters/growth/">Growth & Branching</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/parameters/leaves/">Leaves & Flowers</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Advanced Features</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/effectors/">Effectors (Obstacles)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/animation/">Animation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/performance/">Optimization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/advanced/generation-settings/">Advanced Generation</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/management/sources/">Source Objects</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../procedural/management/apply-mesh/">Apply & Export</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Simulation Mode</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" >Create Ivy</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Add New Ivy</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#1-preparation">1. Preparation</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#select-targets">Select Targets</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#place-the-start-point">Place the Start Point</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-configuration">2. Configuration</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#auto-bake-option">Auto Bake Option</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-asset-selection">3. Asset Selection</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#important-asset-rules">Important Asset Rules</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#4-add-simulation">4. Add Simulation !</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#influencing-growth">Influencing Growth</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../bake/">Baking</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../step-1/">Step 1 - Core Growth</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../step-2/">Step 2 - Foliage Growth</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Features</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/draw/">Draw Control</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/cut/">Cut Tool</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/leaves/">Leaves & Flowers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/animation/">Animation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/optimization/">Optimization</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../features/visibility/">Visibility</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../management/sources/">Objects Data</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../management/apply-mesh/">Apply & Export</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../support/">Help & Support</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../license/">License</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../notes/">Release Notes</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Baga Ivy Generator</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Simulation Mode</li>
+          <li class="breadcrumb-item">Create Ivy</li>
+      <li class="breadcrumb-item active">Add New Ivy</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="adding-ivy-simulation-method">Adding Ivy (Simulation Method)</h1>
+<p>The <strong>Simulation</strong> method in BagaIvy V3 allows realistic growth animations. Unlike the procedural method, this workflow involves a baking process to calculate the plant's interaction with the environment.</p>
+<hr />
+<p><a class="md-button md-button--primary" href="https://youtu.be/KAdrI_W3c_4">Quick Start : Simulation YouTube Tutorial</a></p>
+<hr />
+<h2 id="1-preparation">1. Preparation</h2>
+<h3 id="select-targets">Select Targets</h3>
+<p>Select one or more <strong>Mesh</strong> objects in your 3D Viewport. These will be your <strong>Targets</strong>—the surfaces upon which the ivy will grow.</p>
+<h3 id="place-the-start-point">Place the Start Point</h3>
+<p>The <strong>3D Cursor</strong> defines the origin of the growth.</p>
+<ul>
+<li>Position the 3D Cursor on your target surface (<strong>Shift + Right Click</strong>).</li>
+<li>This creates the initial <strong>Start Point</strong>.</li>
+<li><em>Note: You can move this point later or add multiple start points to create several growth origins.</em></li>
+</ul>
+<hr />
+<h2 id="2-configuration">2. Configuration</h2>
+<p>In the <strong>BagaIvy N-Panel</strong>, set the generation method to <strong>Simulation</strong>.</p>
+<h3 id="auto-bake-option">Auto Bake Option</h3>
+<ul>
+<li><strong>Auto Bake Button</strong>: When enabled, the addon will automatically run both simulation stages: <strong>Step 1 (Core Growth)</strong> and <strong>Step 2 (Foliage Growth)</strong> immediately after creation.</li>
+<li><strong>Frame Range</strong>: To the right of the Auto Bake button, you can define the frame range for the simulation.</li>
+<li><strong>Interrupting</strong>: If you need to stop the Auto Bake process while it is running, simply press <strong>Escape</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>Tip</strong>: All baking settings and frame ranges can be modified at any time after the ivy is created.</p>
+</blockquote>
+<hr />
+<h2 id="3-asset-selection">3. Asset Selection</h2>
+<p>Choose the source for your leaves and flowers:</p>
+<ul>
+<li><strong>View 3D</strong>: Use objects already present in your current Blender scene.</li>
+<li><strong>Asset Browser</strong>: Use assets from the official BagaIvy library or any other library (must be a mesh).</li>
+<li><strong>Using Presets</strong>: To use a BagaIvy preset, select the <strong>BagaIvy Generator</strong> library, navigate to the <strong>Presets</strong> category, and pick a preset.</li>
+</ul>
+<h3 id="important-asset-rules">Important Asset Rules</h3>
+<ul>
+<li><strong>Naming Convention</strong>: Any imported asset with the word <strong>"flower"</strong> in its name will be automatically assigned to the Flowers collection by the addon.</li>
+<li><strong>Library Selection</strong>: You cannot use the "ALL" category in the Asset Browser. You must select a specific library (e.g., <strong>BagaIvy Generator</strong>).</li>
+<li><strong>If you’re reading this</strong>: Thanks! There’s a hidden coupon code in the simulation node tree. <em>Go straight to the source!</em> If you’ve already done a [coupon code], send us a message ! 10 first get 90% off.</li>
+</ul>
+<hr />
+<h2 id="4-add-simulation">4. Add Simulation !</h2>
+<p>Click the <strong>Add Simulation</strong> button. BagaIvy will Import assets, create collections, and setup the simulation nodes.
+By default, the addon will switch Blender to <strong>Edit Mode</strong>. 
+<em>Note: You can enable or disable this automatic switch in the Addon Preferences.</em></p>
+<h3 id="influencing-growth">Influencing Growth</h3>
+<p>While in Edit Mode, you can use the <strong>Draw Tool</strong> to create curves. These curves are used to guide and influence the path of the simulation. For more details on this, see the <strong>Draw Control</strong> in the Feature section.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../../procedural/management/apply-mesh/" class="btn btn-neutral float-left" title="Apply & Export"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../bake/" class="btn btn-neutral float-right" title="Baking">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../../procedural/management/apply-mesh/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../bake/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
